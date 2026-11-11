@@ -35,14 +35,14 @@
         <div class="hero-tag"><small>New this week</small><b>${esc(hero.name)}</b><span>${rs(hero.price)}</span></div>`;
     $('#cats').innerHTML = CATS.slice(1).map(c => {
         const p = inCat(c.key)[1] || inCat(c.key)[0];
-        return `<a class="cat" href="#collection" data-cat="${c.key}">${p ? `<img src="${IMG(p.img, 400)}" alt="" loading="lazy">` : ''}<span><b>${esc(c.label)}</b><small>${inCat(c.key).length} pieces</small></span></a>`;
+        return `<a class="cat" href="#collection" data-cat="${c.key}">${p ? `<img src="${IMG(p.img, 400)}" alt="" loading="lazy" decoding="async">` : ''}<span><b>${esc(c.label)}</b><small>${inCat(c.key).length} pieces</small></span></a>`;
     }).join('');
 
     /* collection */
     const STEP = 12;
     let cat = 'all', shown = STEP;
     const card = p => `<article class="card">
-        <button class="ph" data-zoom="${esc(p.img)}" data-name="${esc(p.name)}" aria-label="See ${esc(p.name)} bigger"><img src="${IMG(p.img)}"${SRCSET(p.img)} alt="${esc(p.name)}" loading="lazy">${p.tag ? `<span class="tag">${esc(p.tag)}</span>` : ''}</button>
+        <button class="ph" data-zoom="${esc(p.img)}" data-name="${esc(p.name)}" aria-label="See ${esc(p.name)} bigger"><img src="${IMG(p.img)}"${SRCSET(p.img)} alt="${esc(p.name)}" loading="lazy" decoding="async">${p.tag ? `<span class="tag">${esc(p.tag)}</span>` : ''}</button>
         <div class="bd"><small>${esc(CAT[p.category].one)}</small><h3>${esc(p.name)}</h3><p class="pr">${rs(p.price)}</p>
         <a class="btn btn-wa btn-sm" href="${wa(`Hello ${SHOP.name}, is the ${p.name} (${rs(p.price)}) available?`)}">${WA_ICON}Ask on WhatsApp</a></div></article>`;
     function render() {
