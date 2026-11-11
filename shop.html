@@ -1,53 +1,30 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Shop | WebLuxe High Fashion Boutique</title>
-<meta name="description" content="Every piece in store, with search, categories and prices.">
-<meta name="theme-color" content="#ffffff">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%23d98a0b'/%3E%3Ctext x='32' y='44' font-size='34' text-anchor='middle' fill='white' font-family='Georgia'%3EW%3C/text%3E%3C/svg%3E">
+<meta name="description" content="Every piece with its price: sarees, lehengas, suits, sherwanis and kurtas.">
+<meta name="theme-color" content="#0a2f2f">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%230f4c4b'/%3E%3Ctext x='32' y='44' font-family='Georgia' font-size='34' text-anchor='middle' fill='%23e7c27a'%3EW%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://images.unsplash.com">
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&family=Marcellus&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
 <link rel="stylesheet" href="demo/demo.css">
 <link rel="stylesheet" href="demo/tiers.css">
+<script>document.documentElement.classList.remove('no-js');try{if(sessionStorage.getItem('wl_low_seen'))document.documentElement.classList.add('seen')}catch(e){}</script>
 </head>
 <body data-page="shop">
-
-<div class="notice" role="status"><span></span></div>
-<header class="hdr"><div class="wrap">
-  <a class="logo" href="index.html" aria-label="WebLuxe High Fashion Boutique, home"><i>W</i><span>WebLuxe<small>High Fashion Boutique</small></span></a>
-  <nav class="nav" aria-label="Main"><a href="index.html">Home</a><a href="shop.html">Shop</a><a href="contact.html">Visit us</a></nav>
-  <a class="btn wa" href="#" data-wa="" target="_blank" rel="noopener" aria-label="WhatsApp us"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3Zm0 16.4a7.4 7.4 0 0 1-3.8-1l-.3-.2-2.7.7.7-2.6-.2-.3A7.4 7.4 0 1 1 12 19.4Zm4.1-5.5c-.2-.1-1.3-.7-1.5-.7s-.4-.1-.5.1-.6.7-.7.9-.3.2-.5 0a6 6 0 0 1-3-2.6c-.2-.4.2-.4.7-1.3a.4.4 0 0 0 0-.4l-.7-1.6c-.2-.4-.4-.4-.5-.4h-.5a.9.9 0 0 0-.6.3 2.7 2.7 0 0 0-.8 2 4.6 4.6 0 0 0 1 2.4 10.6 10.6 0 0 0 4 3.6c1.5.6 2.1.7 2.8.6a2.4 2.4 0 0 0 1.6-1.1 2 2 0 0 0 .1-1.1c0-.2-.2-.2-.4-.3Z"/></svg><span>WhatsApp</span></a>
-</div></header>
-<main>
-<div class="wrap page-head"><p class="crumb"><a href="index.html">Home</a> / Shop</p><h1 id="title">The collection</h1><p>Search, filter by category or sort by price.</p></div>
-<div class="tools"><div class="wrap">
-  <label class="search"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m16.5 16.5 4 4"/></svg><span class="sr">Search</span><input id="q" type="search" placeholder="Search saree, lehenga, sherwani…" autocomplete="off"></label>
-  <select id="sort" class="sel" aria-label="Sort"><option value="">Newest</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option></select>
-  <div class="chips" id="chips"></div>
-</div></div>
-<div class="wrap"><p id="info" class="crumb" style="margin-bottom:14px"></p><div class="grid" id="grid"></div>
-  <div class="empty" id="empty" hidden><p>Nothing matches that search.</p><button class="btn line" id="reset">Show everything</button></div>
-</div>
-</main>
-<footer class="foot"><div class="wrap">
-  <div class="cols">
-    <div><a class="logo" href="index.html" aria-label="WebLuxe High Fashion Boutique, home"><i>W</i><span>WebLuxe<small>High Fashion Boutique</small></span></a><p>Sarees, bridal and party lehengas, anarkalis and sherwanis for every celebration in Mauritius.</p></div>
-    <div><h4>Shop</h4><ul><li><a href="shop.html?cat=bridal">Bridal lehengas</a></li><li><a href="shop.html?cat=saree">Sarees</a></li><li><a href="shop.html?cat=gown">Suits &amp; anarkalis</a></li><li><a href="shop.html?cat=groom">Groom &amp; men</a></li></ul></div>
-    <div><h4>Visit</h4><ul><li>Royal Road, Rose Hill</li><li>Coastal Road, Grand Baie</li><li><a href="#" data-wa="" target="_blank" rel="noopener">WhatsApp us</a></li><li><a href="tel:"><span class="ph-num">Your phone number</span></a></li></ul></div>
-  </div>
-  <p class="demo-note">This is a demo website made by WebLuxe. All pieces, prices, photos, names, addresses and opening hours are examples, and the WhatsApp and call buttons do not contact anyone.</p>
-  <div class="base"><span>&copy; <span data-year>2026</span> WebLuxe High Fashion Boutique</span><span><a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a> · <a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a> · Website built by <a class="credit" href="https://webluxe.github.io/WebLuxe/" target="_blank" rel="noopener">WebLuxe</a></span></div>
-</div></footer>
-<div class="toast" role="status" aria-live="polite"></div>
+<div id="loader" aria-hidden="true"><div class="jl"></div><div class="lc"><div class="mono">W</div><div class="nm">WEBLUXE</div><div class="sub">High Fashion Boutique</div><div class="bar"><i></i></div></div></div>
+<div id="site-hdr"></div>
+<main id="page"></main>
+<div id="site-ftr"></div>
 <script src="data.js"></script>
 <script>window.WL_DEMO = { admin: 'admin/' };</script>
 <script src="demo/demo.js"></script>
+<script src="assets/app.js"></script>
 <script src="demo/tiers.js"></script>
-<script src="app.js"></script>
 </body>
 </html>
