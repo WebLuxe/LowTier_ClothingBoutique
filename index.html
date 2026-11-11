@@ -1,26 +1,137 @@
 <!doctype html>
-<html lang="en" class="no-js">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>WebLuxe High Fashion Boutique | Sarees, Lehengas & Sherwanis in Mauritius</title>
-<meta name="description" content="Sarees, bridal and party lehengas, suits, sherwanis and kurtas. Two boutiques in Rose Hill and Grand Baie. Order on WhatsApp.">
-<meta name="theme-color" content="#0a2f2f">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%230f4c4b'/%3E%3Ctext x='32' y='44' font-family='Georgia' font-size='34' text-anchor='middle' fill='%23e7c27a'%3EW%3C/text%3E%3C/svg%3E">
+<title>WebLuxe High Fashion Boutique | Bridal & Festive Wear in Mauritius</title>
+<meta name="description" content="Bridal lehengas, sarees, suits and sherwanis. Two boutiques in Rose Hill and Grand Baie. Ask about any piece on WhatsApp.">
+<meta name="theme-color" content="#6e1238">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23b8255f'/%3E%3Ctext x='32' y='44' font-family='Georgia' font-size='34' text-anchor='middle' fill='%23fff'%3EW%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://images.unsplash.com">
-<link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&family=Marcellus&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Prata&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/style.css">
 <link rel="stylesheet" href="demo/demo.css">
 <link rel="stylesheet" href="demo/tiers.css">
-<script>document.documentElement.classList.remove('no-js');try{if(sessionStorage.getItem('wl_low_seen'))document.documentElement.classList.add('seen')}catch(e){}</script>
 </head>
-<body data-page="home">
-<div id="loader" aria-hidden="true"><div class="jl"></div><div class="lc"><div class="mono">W</div><div class="nm">WEBLUXE</div><div class="sub">High Fashion Boutique</div><div class="bar"><i></i></div></div></div>
-<div id="site-hdr"></div>
-<main id="page"></main>
-<div id="site-ftr"></div>
+<body>
+<p class="top">Example shop: pieces, prices and photos are samples</p>
+
+<header class="hdr" id="top">
+    <div class="wrap hdr-in">
+        <a class="logo" href="#top" aria-label="WebLuxe High Fashion Boutique, top of page"><b>WebLuxe</b><small>High Fashion Boutique</small></a>
+        <nav class="nav" id="nav" aria-label="Main">
+            <a href="#collection">Collection</a>
+            <a href="#how">How to order</a>
+            <a href="#visit">Visit us</a>
+        </nav>
+        <a class="btn btn-wa hdr-wa" data-wa="Hello WebLuxe High Fashion Boutique!" href="#"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-4A8 8 0 1 1 8 18.7L4 20Z"/></svg><span>WhatsApp</span></a>
+        <button class="burger" aria-label="Menu" aria-expanded="false" aria-controls="nav"><i></i><i></i><i></i></button>
+    </div>
+</header>
+
+<main>
+    <section class="hero">
+        <div class="wrap hero-in">
+            <div class="hero-txt">
+                <p class="kick">Rose Hill &amp; Grand Baie</p>
+                <h1>Bridal &amp; festive wear, <em>chosen with care</em></h1>
+                <p class="lead">Bridal lehengas, silk sarees, suits and sherwanis. See every piece and its price here, then try it on in our boutique.</p>
+                <div class="cta">
+                    <a class="btn btn-pink" href="#collection">See the collection</a>
+                    <a class="btn btn-line" href="#visit">Visit a boutique</a>
+                </div>
+                <ul class="facts">
+                    <li><b id="factCount">28</b> pieces in store</li>
+                    <li><b>2</b> boutiques</li>
+                    <li><b>Free</b> alterations</li>
+                </ul>
+            </div>
+            <div class="hero-ph" id="heroPh"></div>
+        </div>
+    </section>
+
+    <section class="sec cats-sec">
+        <div class="wrap">
+            <div class="cats" id="cats"></div>
+        </div>
+    </section>
+
+    <section class="sec coll" id="collection">
+        <div class="wrap">
+            <div class="head">
+                <p class="kick">The collection</p>
+                <h2>Every piece, with its price</h2>
+                <p>Tap a photo to see it bigger. Ask us on WhatsApp for sizes and colours.</p>
+            </div>
+            <div class="pills" id="pills" role="tablist" aria-label="Categories"></div>
+            <div class="grid" id="grid"></div>
+            <div class="more"><button class="btn btn-line" id="moreBtn" hidden>Show more pieces</button></div>
+        </div>
+    </section>
+
+    <section class="sec how" id="how">
+        <div class="wrap">
+            <div class="head">
+                <p class="kick">Simple</p>
+                <h2>How to order</h2>
+            </div>
+            <ol class="steps">
+                <li><span>1</span><b>Choose a piece</b><p>Every piece is on this page with its price.</p></li>
+                <li><span>2</span><b>Message us</b><p>Tap “Ask on WhatsApp”. We reply with sizes and colours.</p></li>
+                <li><span>3</span><b>Try it on</b><p>Come to the boutique. We fit it for you and you take it home.</p></li>
+            </ol>
+        </div>
+    </section>
+
+    <section class="sec visit" id="visit">
+        <div class="wrap">
+            <div class="head">
+                <p class="kick">Visit us</p>
+                <h2>Two boutiques in Mauritius</h2>
+            </div>
+            <div class="vgrid">
+                <div class="vcard">
+                    <h3>Rose Hill</h3>
+                    <p>Royal Road, Rose Hill<br>Opposite the bus station</p>
+                    <a class="link" href="https://www.google.com/maps/search/?api=1&amp;query=Rose+Hill+Mauritius" target="_blank" rel="noopener">Get directions →</a>
+                </div>
+                <div class="vcard">
+                    <h3>Grand Baie</h3>
+                    <p>Coastal Road, Grand Baie<br>A short walk from the beach</p>
+                    <a class="link" href="https://www.google.com/maps/search/?api=1&amp;query=Grand+Baie+Mauritius" target="_blank" rel="noopener">Get directions →</a>
+                </div>
+                <div class="vcard hours">
+                    <h3>Opening hours</h3>
+                    <p>Monday to Saturday: 9:00 to 18:00<br>Sunday: 9:00 to 12:30</p>
+                    <p class="ph">Phone: <span class="ph-num">Your phone number</span></p>
+                </div>
+            </div>
+            <div class="cta-band">
+                <p>Questions about a piece? We usually reply within the hour.</p>
+                <a class="btn btn-wa" data-wa="Hello WebLuxe High Fashion Boutique, I have a question." href="#"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-4A8 8 0 1 1 8 18.7L4 20Z"/></svg>Message us on WhatsApp</a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="ftr">
+    <div class="wrap">
+        <div class="ftr-top">
+            <a class="logo" href="#top"><b>WebLuxe</b><small>High Fashion Boutique</small></a>
+            <nav aria-label="Footer"><a href="#collection">Collection</a><a href="#how">How to order</a><a href="#visit">Visit us</a><a href="https://www.facebook.com/">Facebook</a><a href="https://www.instagram.com/">Instagram</a></nav>
+        </div>
+        <p class="note">This is a demo website made by WebLuxe. All pieces, prices, photos, names, addresses and opening hours are examples, and the WhatsApp and call buttons do not contact anyone.</p>
+        <p class="copy"><span>© 2026 WebLuxe High Fashion Boutique, Mauritius</span><span>Website built by <a href="https://webluxe.github.io/WebLuxe/" target="_blank" rel="noopener">WebLuxe</a></span></p>
+    </div>
+</footer>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Photo" hidden>
+    <button class="lb-x" aria-label="Close">×</button>
+    <figure><img alt=""><figcaption></figcaption></figure>
+</div>
+
 <script src="data.js"></script>
 <script>window.WL_DEMO = { admin: 'admin/' };</script>
 <script src="demo/demo.js"></script>
